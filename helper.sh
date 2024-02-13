@@ -47,7 +47,7 @@ elif [[ "$i" = "6" ]]
   google-chrome "https://jira.yourdomain.com"
 elif [[ "$i" = "7" ]]
  then
- hostID=$(echo $HOSTNAME && ifconfig | awk '/inet/{print$2}' | awk '/172/')
+ hostID=$(echo $HOSTNAME && ifconfig | awk '/inet/{print$2}' | awk '/192/')
  echo $hostID | xclip -sel clip
 elif [[ "$i" = "8" ]]
  then
